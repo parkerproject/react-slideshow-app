@@ -1,0 +1,54 @@
+h1, p {
+  font-family: Lato;
+}
+
+body{
+  overflow: hidden;
+}
+
+.slick-dots li{
+  margin: 0 30px;
+}
+
+.slick-dots{
+  position: relative;
+}
+
+.slick-slide img{
+  margin: 0 auto;
+}
+
+.slick-next{
+  right: 30px;
+}
+
+.slick-prev{
+  left: 0;
+}
+
+li.slick-active img{
+  border: 2px solid blue;
+}
+
+.slick-next:before, .slick-prev:before {
+    font-size: 50px;
+    line-height: 1;
+    opacity: .75;
+    color: black;
+}
+
+.search-bar{
+  text-align: center;
+}
+
+.search-bar input{
+    width: 400px;
+    height: 30px;
+    margin: 10px 0;
+    border: 1px solid black;
+}
+
+.status{
+  color: green;
+  font-weight: bold;
+}

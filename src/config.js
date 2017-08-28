@@ -1,0 +1,3 @@
+// eslint-disable-next-line
+export const BASE_URL = ' https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=6e65375410d0e1f8416f4f6bae38aed2&privacy_filter=1&content_type=1&media=photos&per_page=10&format=json&nojsoncallback=1';
+export const PHOTO_INFO_URL = 'https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&api_key=532ecc9194ac0d738d0b4feee6e1775e&format=json&nojsoncallback=1';
