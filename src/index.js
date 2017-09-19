@@ -29,11 +29,15 @@ class App extends Component {
   }
 
   async getPhotos(term) {
-    const res = await axios.get(`${BASE_URL}&text=${term}`);
-    const { photo } = res.data.photos;
-    const photos = await Promise.all(photo.map(s => getPhoto(s.id),
-    ));
-    this.setState({ photos, processing: false });
+    try {
+      const res = await axios.get(`${BASE_URL}&text=${term}`);
+      const { photo } = res.data.photos;
+      const photos = await Promise.all(photo.map(s => getPhoto(s.id),
+      ));
+      this.setState({ photos, processing: false });
+    } catch (e) {
+      console.log(e);
+    }
   }
 
   photoSearch(term) {
